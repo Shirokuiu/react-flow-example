@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import App from 'src/app/App';
-import { api } from 'src/index';
+import { api } from 'src/services/api';
 import { SliceNameSpace } from 'src/store/constants';
 
 describe('Проверка компонента App', () => {
@@ -14,7 +14,7 @@ describe('Проверка компонента App', () => {
   const mockStore = configureMockStore(middlewares);
 
   describe('Проверка отрисовки', () => {
-    it('Компонент корректно отрисоывается', () => {
+    it('Компонент корректно отрисовывается', () => {
       const store = mockStore({
         [SliceNameSpace.MainPage]: {
           title: 'Hello',
