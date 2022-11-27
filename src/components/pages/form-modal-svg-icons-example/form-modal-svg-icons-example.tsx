@@ -9,17 +9,17 @@ import PageLayout from 'src/components/layouts/page-layout/page-layout';
 import SvgSpriteIcon from 'src/components/shared/svg-sprite-icon/svg-sprite-icon';
 import { SvgSpriteIconId } from 'src/components/shared/svg-sprite-icon/types';
 
-function TestPage() {
+function FormModalSvgIconsExample() {
   return (
     <HelmetProvider>
       <ModalProvider value={[TestModal]}>
         <Helmet>
-          <title>Test page</title>
+          <title>Пример формы, модалки, svg иконок</title>
         </Helmet>
         <PageLayout>
           <ul>
             <li>
-              <h1>Hello from test page</h1>
+              <h1>Пример формы, модалки, svg иконок</h1>
             </li>
             <li>
               <ExampleTriggerModal />
@@ -46,4 +46,4 @@ function TestPage() {
   );
 }
 
-export default TestPage;
+export default FormModalSvgIconsExample;

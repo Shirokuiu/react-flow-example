@@ -21,7 +21,7 @@ function MainPage() {
           <h1>Руководство</h1>
           <ul>
             <li>
-              <Link to="test-page">Пример с формой и модалкой</Link>
+              <Link to="form-modal-svg-icons-example">Пример с формой и модалкой</Link>
             </li>
             <li>
               <Link to="redux-example-page">Пример с redux</Link>
