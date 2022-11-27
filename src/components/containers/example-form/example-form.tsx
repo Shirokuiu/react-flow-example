@@ -48,7 +48,7 @@ function ExampleForm() {
   };
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form noValidate onSubmit={formik.handleSubmit}>
       <ul>
         <li>
           <InputText
@@ -79,7 +79,7 @@ function ExampleForm() {
         </li>
         <li>
           <InputRadio
-            id="radio"
+            id="radio1"
             value={RadioValue.Yes}
             name="radioGroup"
             checkedValue={formik.values.radioGroup}
@@ -88,7 +88,7 @@ function ExampleForm() {
             Yes
           </InputRadio>
           <InputRadio
-            id="radio"
+            id="radio2"
             value={RadioValue.No}
             name="radioGroup"
             checkedValue={formik.values.radioGroup}
