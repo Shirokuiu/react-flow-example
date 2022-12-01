@@ -2,8 +2,8 @@ import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import MainPage from 'src/components/pages/main-page/main-page';
-import SvgSprite from 'src/components/shared/svg-sprite/svg-sprite';
 import { PageRoutes } from 'src/constants/routes';
+import WrappedSvgSprite from 'src/hocks/wrapped-svg-sprite/wrapped-svg-sprite';
 
 const FormModalSvgIconsExample = lazy(
   () => import('src/components/pages/form-modal-svg-icons-example/form-modal-svg-icons-example'),
@@ -61,7 +61,7 @@ function App() {
           />
         </Route>
       </Routes>
-      <SvgSprite />
+      <WrappedSvgSprite />
     </>
   );
 }
