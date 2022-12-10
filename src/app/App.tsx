@@ -20,6 +20,9 @@ const DataFetchByRtkQueryExamplePage = lazy(
       'src/components/pages/data-fetch-by-rtk-query-example-page/data-fetch-by-rtk-query-example-page'
     ),
 );
+const ReactFlowExamplePage = lazy(
+  () => import('src/components/pages/react-flow-example-page/react-flow-example-page'),
+);
 
 function App() {
   return (
@@ -56,6 +59,14 @@ function App() {
             element={
               <Suspense fallback={<>...</>}>
                 <DataFetchByRtkQueryExamplePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path={PageRoutes.ReactFlowExamplePage}
+            element={
+              <Suspense fallback={<>...</>}>
+                <ReactFlowExamplePage />
               </Suspense>
             }
           />

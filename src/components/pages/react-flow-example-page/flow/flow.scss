@@ -1,0 +1,19 @@
+.flow {
+  height: 100%;
+
+  &__header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__zoom-controls {
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    right: 16px;
+    transform: translateY(50%);
+  }
+}

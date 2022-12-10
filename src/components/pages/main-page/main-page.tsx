@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import CenterLayout from 'src/components/layouts/center-layout/center-layout';
 import PageLayout from 'src/components/layouts/page-layout/page-layout';
+import {PageRoutes} from 'src/constants/routes';
 
 function MainPage() {
   return (
@@ -31,6 +32,9 @@ function MainPage() {
             </li>
             <li>
               <Link to="data-fetch-by-rtk-query-example-page">Пример работы с api (rtk-query)</Link>
+            </li>
+            <li>
+              <Link to={PageRoutes.ReactFlowExamplePage}>Пример работы с react flow</Link>
             </li>
           </ul>
         </CenterLayout>
