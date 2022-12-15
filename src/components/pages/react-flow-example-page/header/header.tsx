@@ -1,6 +1,6 @@
 import { Button, Drawer } from 'antd';
 import { useState } from 'react';
-import AddObjectsForm from 'src/components/pages/react-flow-example-page/add-objects-form/add-objects-form';
+import AddNodesForm from 'src/components/pages/react-flow-example-page/add-nodes-form/add-nodes-form';
 
 import { PropsWithCssClassName } from 'src/type/shared';
 
@@ -18,7 +18,7 @@ function Header({ className = '' }: PropsWithCssClassName) {
         onClose={() => toggleIsOpen(false)}
         open={isOpen}
       >
-        <AddObjectsForm />
+        <AddNodesForm onAddNode={() => toggleIsOpen(false)} />
       </Drawer>
     </div>
   );
