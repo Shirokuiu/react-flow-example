@@ -8,7 +8,7 @@ function AddNodesForm({ onAddNode = () => undefined }: AddNodesFormProps) {
   const dispatch = useAppDispatch();
 
   const handleAddNodeClick = (nodeType: string) => {
-    dispatch(addNode(nodeType));
+    dispatch(addNode());
     onAddNode(nodeType);
   };
 
