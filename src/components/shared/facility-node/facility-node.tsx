@@ -1,42 +1,19 @@
-import { Position } from 'reactflow';
-
 import CustomHandle from 'src/components/shared/custom-handle/custom-handle';
+import { handles } from 'src/components/shared/facility-node/constants';
 import FacilityNodeSvg from 'src/components/shared/facility-node/facility-node-svg/facility-node-svg';
 import './facility-node.scss';
 
+import { MCK_FACILITY_FIT } from 'src/constants/mck-node';
+
 function FacilityNode() {
   return (
-    <div className="facility-node">
-      <CustomHandle
-        type="target"
-        id="top-1"
-        position={Position.Top}
-        className="facility-node__handler-top-1"
-      />
-      <CustomHandle
-        type="target"
-        id="top-2"
-        position={Position.Top}
-        className="facility-node__handler-top-2"
-      />
-      <CustomHandle
-        type="target"
-        id="top-3"
-        position={Position.Top}
-        className="facility-node__handler-top-3"
-      />
-      <CustomHandle
-        type="target"
-        id="top-4"
-        position={Position.Top}
-        className="facility-node__handler-top-4"
-      />
-      <CustomHandle
-        type="target"
-        id="top-5"
-        position={Position.Top}
-        className="facility-node__handler-top-5"
-      />
+    <div
+      className="facility-node"
+      style={{ width: MCK_FACILITY_FIT.WIDTH, height: MCK_FACILITY_FIT.HEIGHT }}
+    >
+      {handles.map(({ type, id, position, className }) => (
+        <CustomHandle key={id} type={type} id={id} position={position} className={className} />
+      ))}
       <FacilityNodeSvg />
     </div>
   );

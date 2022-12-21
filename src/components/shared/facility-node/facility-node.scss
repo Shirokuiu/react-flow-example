@@ -4,15 +4,30 @@
   &__handler-top-2,
   &__handler-top-3,
   &__handler-top-4,
-  &__handler-top-5 {
+  &__handler-top-5,
+  &__handler-right-1,
+  &__handler-right-2,
+  &__handler-right-3,
+  &__handler-right-4,
+  &__handler-right-5,
+  &__handler-right-6 {
+    opacity: 0;
 
     &:hover {
-      opacity: 0.3;
+      opacity: 1;
     }
   }
 
+  &__handler-top-1,
+  &__handler-top-2,
+  &__handler-top-3,
+  &__handler-top-4,
+  &__handler-top-5 {
+    top: -6px;
+  }
+
   &__handler-top-1 {
-    left: 8px;
+    left: 9px;
   }
 
   &__handler-top-2 {
@@ -25,10 +40,43 @@
   }
 
   &__handler-top-4 {
-    right: 15px;
+    right: 11px;
   }
 
   &__handler-top-5 {
-    right: 0;
+    right: -5px;
+  }
+
+  &__handler-right-1,
+  &__handler-right-2,
+  &__handler-right-3,
+  &__handler-right-4,
+  &__handler-right-5,
+  &__handler-right-6 {
+    transform: rotate(90deg);
+  }
+
+  &__handler-right-1 {
+    top: 0;
+  }
+
+  &__handler-right-2 {
+    top: 16px;
+  }
+
+  &__handler-right-3 {
+    top: 32px;
+  }
+
+  &__handler-right-4 {
+    top: 48px;
+  }
+
+  &__handler-right-5 {
+    top: 64px;
+  }
+
+  &__handler-right-6 {
+    top: 80px;
   }
 }
