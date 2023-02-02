@@ -1,4 +1,3 @@
-import { StrictMode } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { createRoot } from 'react-dom/client';
@@ -14,11 +13,9 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-  <StrictMode>
-    <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </BrowserRouter>
-  </StrictMode>,
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
 );
